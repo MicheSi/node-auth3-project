@@ -38,28 +38,24 @@ const SignIn = props => {
         <div className='signupForm'>
             <h2>Sign In</h2>
             <Form onSubmit={submitForm}>
-                <Form.Group widths='equal'>
-                    <Form.Input
-                     fluid
-                     id='username'
-                     type='text'
-                     name='username'
-                     label='Username'
-                     placeholder='Enter a Username'
-                     onChange={handleChange}
-                     value={user.username}
-                    />
-                    <Form.Input
-                     fluid
-                     id='password'
-                     type='password'
-                     name='password'
-                     label='Password'
-                     placeholder='Enter a Password'
-                     onChange={handleChange}
-                     value={user.password}
-                    />
-                </Form.Group>
+                <Form.Input
+                 id='username'
+                 type='text'
+                 name='username'
+                 label='Username'
+                 placeholder='Enter a Username'
+                 onChange={handleChange}
+                 value={user.username}
+                />
+                <Form.Input
+                 id='password'
+                 type='password'
+                 name='password'
+                 label='Password'
+                 placeholder='Enter a Password'
+                 onChange={handleChange}
+                 value={user.password}
+                />
                 <Button type='submit'>Sign In</Button>
             </Form>
             

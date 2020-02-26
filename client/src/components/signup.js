@@ -37,9 +37,7 @@ const Signup = props => {
         <div className='signupForm'>
             <h2>Sign Up</h2>
             <Form onSubmit={submitForm}>
-                <Form.Group widths='equal'>
                     <Form.Input
-                     fluid
                      id='username'
                      type='text'
                      name='username'
@@ -49,7 +47,6 @@ const Signup = props => {
                      value={user.username}
                     />
                     <Form.Input
-                     fluid
                      id='password'
                      type='password'
                      name='password'
@@ -59,7 +56,6 @@ const Signup = props => {
                      value={user.password}
                     />
                     <Form.Input
-                     fluid
                      id='department'
                      type='text'
                      name='department'
@@ -68,7 +64,6 @@ const Signup = props => {
                      onChange={handleChange}
                      value={user.department}
                     />
-                </Form.Group>
                 <Button type='submit'>Sign Up</Button>
             </Form>
             

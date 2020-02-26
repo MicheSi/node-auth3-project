@@ -3,9 +3,11 @@ import {Route, Switch} from 'react-router-dom';
 
 import PrivateRoute from './utils/PrivateRoute';
 import Signup from './components/signup';
+import SignIn from './components/signin';
+import UsersList from './components/usersList';
 
 import './App.css';
-import SignIn from './components/signin';
+
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
     <div className="App">
       <h1>Node Auth3 Project</h1>
       <Switch>
-        <PrivateRoute exact path='/users' />
+        <PrivateRoute exact path='/users' component={UsersList} />
         <Route exact path='/signin' component={SignIn} />
         <Route exact path='/' component={Signup} />
       </Switch>
