@@ -16,11 +16,30 @@ html, body {
   border-radius: 5px;
   width: 600px;
   height: 400px;
+  margin-top: 2%;
+}
+
+.signupForm h2 {
+  margin-top: 2%;
 }
 
 .signupForm form {
   display: flex;
   flex-direction: column;
+  width: 400px;
+}
+
+button {
+  width: 150px;
+}
+
+.usercard {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.usersList {
+  margin-top: 2%;
 }
 
 

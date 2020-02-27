@@ -28,7 +28,7 @@ const Signup = props => {
             .post('/auth/register', user)
             .then(res => {
                 setUser(user)
-                window.location.href='/login'
+                window.location.href='/signin'
             })
             .catch(err => console.log('cannot sign up user', err))
     }
@@ -66,8 +66,6 @@ const Signup = props => {
                     />
                 <Button type='submit'>Sign Up</Button>
             </Form>
-            
-
         </div>
     )
 }
